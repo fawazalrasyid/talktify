@@ -1,19 +1,29 @@
+import 'dart:math';
+
+import 'package:intl/intl.dart';
+
 class Helpers {
-  String dayHourMinuteSecondFunction(Duration duration) {
-    String twoDigits(int n) => n.toString().padLeft(2, "0");
-    String days = twoDigits(duration.inDays);
-    String hours = twoDigits(duration.inHours.remainder(24));
-    String minutes = twoDigits(duration.inMinutes.remainder(60));
-    String seconds = twoDigits(duration.inSeconds.remainder(60));
-    return days +
-        ' ' +
-        " Hari " +
-        hours +
-        " Jam " +
-        minutes +
-        " Menit " +
-        seconds +
-        " Detik";
+  String capitalizeFirstLetter(String text) {
+    if (text.isEmpty) {
+      return text;
+    }
+    return text[0].toUpperCase() + text.substring(1);
+  }
+
+  int generateRandomNumber() {
+    Random random = Random();
+
+    return random.nextInt(1001);
+  }
+
+  String formatDateTime(DateTime dateTime) {
+    String startTime = DateFormat.Hm().format(dateTime);
+    String endTime = DateFormat.Hm().format(
+      dateTime.add(const Duration(hours: 1)),
+    );
+    String date = DateFormat('dd MMM y').format(dateTime);
+
+    return '$startTime - $endTime, $date';
   }
 
   String dayHourFunction(Duration duration) {

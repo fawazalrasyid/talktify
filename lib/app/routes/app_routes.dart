@@ -10,6 +10,12 @@ abstract class Routes {
   static const REGISTER = _Paths.REGISTER;
   static const MAIN = _Paths.MAIN;
   static const COMING_SOON = _Paths.COMING_SOON;
+  static const PROFILE = _Paths.PROFILE;
+  static const DETAIL_ROOM = _Paths.DETAIL_ROOM;
+  static const PAYMENT_SUCCESS = _Paths.PAYMENT_SUCCESS;
+  static const TRANSACTION_SUCCESS = _Paths.TRANSACTION_SUCCESS;
+  static const EXPLORE = _Paths.EXPLORE;
+  static const ACTIVITY = _Paths.ACTIVITY;
 }
 
 abstract class _Paths {
@@ -21,4 +27,10 @@ abstract class _Paths {
   static const REGISTER = '/register';
   static const MAIN = '/main';
   static const COMING_SOON = '/coming-soon';
+  static const PROFILE = '/profile';
+  static const DETAIL_ROOM = '/detail-room';
+  static const PAYMENT_SUCCESS = '/payment-success';
+  static const TRANSACTION_SUCCESS = '/transaction-success';
+  static const EXPLORE = '/explore';
+  static const ACTIVITY = '/activity';
 }

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 abstract class AppColors {
-  static const Color pageBackground = Color(0xFFF8FAFF);
+  static const Color pageBackground = Color(0xFFF7FCFE);
   static const Color statusBarColor = Color(0xFF38686A);
   static const Color appBarColor = Color(0xFF38686A);
   static const Color appBarIconColor = Color(0xFFFFFFFF);
   static const Color appBarTextColor = Color(0xFFFFFFFF);
 
   static const Color centerTextColor = Colors.grey;
-  static const MaterialColor colorPrimarySwatch = Colors.blue;
+  static const MaterialColor colorPrimarySwatch = Colors.cyan;
   static const Color colorPrimary = Color(0xFF1EC1CE);
   static const Color colorAccent = Color(0xffFF8C6E);
   Color successColor = const Color(0xff6CCC77);
@@ -21,7 +21,7 @@ abstract class AppColors {
   static const Color lightGrey = Color(0xFFC4C4C4);
   static const Color lightGreen = Color(0xFF00EFA7);
 
-  static const Color textPrimaryColor = Color(0xff2280FD);
+  static const Color textPrimaryColor = colorPrimary;
   static const Color textTitleColor = Color(0xff071630);
   static const Color textSubtitleColor = Color(0xff464646);
   static const Color textBodyColor = Color(0xff82838A);
