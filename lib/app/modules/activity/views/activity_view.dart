@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import '../../../core/values/app_colors.dart';
 import '../../../core/values/app_values.dart';
 import '../../../core/widget/activity_card.dart';
-import '../../../core/widget/recommendation_room_card.dart';
 import '../controllers/activity_controller.dart';
 
 class ActivityView extends GetView<ActivityController> {

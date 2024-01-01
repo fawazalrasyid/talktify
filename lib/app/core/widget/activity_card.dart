@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
+import 'package:iconly/iconly.dart';
 import 'package:talktify/app/core/utils/helpers.dart';
 
 import '../../data/models/activity_model.dart';
@@ -24,7 +25,7 @@ class ActivityCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      // onTap: () => Get.toNamed(Routes.DETAIL_ROOM, arguments: activityData),
+      onTap: () => Get.toNamed(Routes.DETAIL_ACTIVITY, arguments: activityData),
       child: Container(
         // height: 150,
         margin: EdgeInsets.fromLTRB(
@@ -91,28 +92,34 @@ class ActivityCard extends StatelessWidget {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 8,
-                          vertical: 4,
-                        ),
-                        decoration: ShapeDecoration(
-                          color: const Color(0xFFFFEDD7),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(4),
-                          ),
-                        ),
-                        child: Text(
-                          Helpers().capitalizeFirstLetter(activityData.type),
-                          style: const TextStyle(
-                            color: Color(0xFFF37742),
-                            fontSize: 12,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
+                      // Container(
+                      //   padding: const EdgeInsets.symmetric(
+                      //     horizontal: 8,
+                      //     vertical: 4,
+                      //   ),
+                      //   decoration: ShapeDecoration(
+                      //     color: const Color(0xFFFFEDD7),
+                      //     shape: RoundedRectangleBorder(
+                      //       borderRadius: BorderRadius.circular(4),
+                      //     ),
+                      //   ),
+                      //   child: Text(
+                      //     Helpers().capitalizeFirstLetter(activityData.type),
+                      //     style: const TextStyle(
+                      //       color: Color(0xFFF37742),
+                      //       fontSize: 12,
+                      //       fontWeight: FontWeight.w500,
+                      //     ),
+                      //   ),
+                      // ),
+                      // const SizedBox(width: 8),
+                      const Icon(
+                        IconlyBold.calendar,
+                        size: 16,
+                        color: AppColors.colorPrimary,
                       ),
-                      const SizedBox(width: 8),
-                      Container(width: 1, height: 16, color: Colors.grey),
+                      // const SizedBox(width: 8),
+                      // Container(width: 1, height: 16, color: Colors.grey),
                       const SizedBox(width: 8),
                       Text(
                         Helpers().formatDateTime(activityData.date),

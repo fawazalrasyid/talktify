@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconly/iconly.dart';
 import 'package:talktify/app/modules/activity/views/activity_view.dart';
-import 'package:talktify/app/modules/coming_soon/views/coming_soon_view.dart';
 import 'package:talktify/app/modules/profile/views/profile_view.dart';
 
 import '../../../core/values/app_colors.dart';

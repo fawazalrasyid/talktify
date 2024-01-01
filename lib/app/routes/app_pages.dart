@@ -4,6 +4,8 @@ import '../modules/activity/bindings/activity_binding.dart';
 import '../modules/activity/views/activity_view.dart';
 import '../modules/coming_soon/bindings/coming_soon_binding.dart';
 import '../modules/coming_soon/views/coming_soon_view.dart';
+import '../modules/detail_activity/bindings/detail_activity_binding.dart';
+import '../modules/detail_activity/views/detail_activity_view.dart';
 import '../modules/detail_room/bindings/detail_room_binding.dart';
 import '../modules/detail_room/views/detail_room_view.dart';
 import '../modules/explore/bindings/explore_binding.dart';
@@ -14,6 +16,8 @@ import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
 import '../modules/main/bindings/main_binding.dart';
 import '../modules/main/views/main_view.dart';
+import '../modules/meeting_room/bindings/meeting_room_binding.dart';
+import '../modules/meeting_room/views/meeting_room_view.dart';
 import '../modules/onboarding/bindings/onboarding_binding.dart';
 import '../modules/onboarding/views/onboarding_view.dart';
 import '../modules/payment_success/bindings/payment_success_binding.dart';
@@ -99,6 +103,16 @@ class AppPages {
       name: _Paths.ACTIVITY,
       page: () => ActivityView(),
       binding: ActivityBinding(),
+    ),
+    GetPage(
+      name: _Paths.DETAIL_ACTIVITY,
+      page: () => const DetailActivityView(),
+      binding: DetailActivityBinding(),
+    ),
+    GetPage(
+      name: _Paths.MEETING_ROOM,
+      page: () => const MeetingRoomView(),
+      binding: MeetingRoomBinding(),
     ),
   ];
 }

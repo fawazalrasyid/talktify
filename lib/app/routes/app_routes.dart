@@ -16,6 +16,8 @@ abstract class Routes {
   static const TRANSACTION_SUCCESS = _Paths.TRANSACTION_SUCCESS;
   static const EXPLORE = _Paths.EXPLORE;
   static const ACTIVITY = _Paths.ACTIVITY;
+  static const DETAIL_ACTIVITY = _Paths.DETAIL_ACTIVITY;
+  static const MEETING_ROOM = _Paths.MEETING_ROOM;
 }
 
 abstract class _Paths {
@@ -33,4 +35,6 @@ abstract class _Paths {
   static const TRANSACTION_SUCCESS = '/transaction-success';
   static const EXPLORE = '/explore';
   static const ACTIVITY = '/activity';
+  static const DETAIL_ACTIVITY = '/detail-activity';
+  static const MEETING_ROOM = '/meeting-room';
 }
